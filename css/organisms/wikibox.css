@@ -27,6 +27,7 @@
   border: 1px solid #edecec;
   flex: 0 0 100%;
   height: max-content;
+  margin-bottom: 48px;
   margin-top: 75px;
   position: relative;
 }
