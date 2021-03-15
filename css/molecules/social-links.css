@@ -21,21 +21,21 @@
 }
 
 .social-links a.instagram::before {
-  background-image: url("../media/icons/instagram.svg");
+  background-image: url("../../media/icons/instagram.svg");
 }
 
 .social-links a.twitter::before {
-  background-image: url("../media/icons/twitter.svg");
+  background-image: url("../../media/icons/twitter.svg");
 }
 
 .social-links a.facebook::before {
-  background-image: url("../media/icons/facebook.svg");
+  background-image: url("../../media/icons/facebook.svg");
 }
 
 .social-links a.youtube::before {
-  background-image: url("../media/icons/youtube.svg");
+  background-image: url("../../media/icons/youtube.svg");
 }
 
 .social-links a.linkedin::before {
-  background-image: url("../media/icons/linkedin.svg");
+  background-image: url("../../media/icons/linkedin.svg");
 }
