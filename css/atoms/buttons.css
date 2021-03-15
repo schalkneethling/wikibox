@@ -1,0 +1,35 @@
+button,
+.button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.rounded-button {
+  border-radius: 50%;
+}
+
+.next::before,
+.previous::before {
+  background-color: transparent;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  content: "";
+  display: inline-block;
+  height: 24px;
+  /* position: absolute;
+  top: -33px; */
+  width: 24px;
+}
+
+.next::before {
+  background-image: url("../../media/icons/arrow.svg");
+  right: 0;
+  transform: rotate(180deg);
+}
+
+.previous::before {
+  background-image: url("../../media/icons/arrow.svg");
+  left: 0;
+}

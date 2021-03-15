@@ -1,0 +1,19 @@
+{
+  "name": "wikibox",
+  "version": "1.0.0",
+  "description": "A simple vanilla wikibox",
+  "main": "index.js",
+  "author": "Schalk Neethling",
+  "license": "MIT",
+  "private": true,
+  "calavera": {
+    "eslint": true,
+    "prettier": true
+  },
+  "devDependencies": {
+    "eslint": "^7.22.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "prettier": "^2.2.1"
+  }
+}

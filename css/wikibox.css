@@ -1,0 +1,70 @@
+.wikibox {
+  margin: 72px 48px;
+  max-width: 450px;
+  overflow: hidden;
+}
+
+.wikibox .panel-container {
+  display: flex;
+  left: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  transition: left 0.5s ease-in-out;
+}
+
+.wikibox h3 {
+  margin-top: 12px;
+}
+
+.wikibox .panel {
+  border: 1px solid #edecec;
+  flex: 0 0 100%;
+  margin-top: 75px;
+  position: relative;
+}
+
+.wikibox .panel-footer,
+.wikibox .panel-lead,
+.wikibox .panel-description,
+.wikibox .panel-social-links,
+.wikibox .panel-detail {
+  padding: 24px;
+}
+
+.wikibox .panel-footer,
+.wikibox .panel-lead,
+.wikibox .panel-social-links {
+  text-align: center;
+}
+
+.wikibox .panel-lead img {
+  background-color: #fff;
+  border-radius: 4px;
+  height: auto;
+  margin: -75px auto 0;
+  width: 250px;
+}
+
+.wikibox .panel-description,
+.wikibox .panel-detail,
+.wikibox .panel-footer,
+.wikibox .panel-social-links {
+  border-top: 1px solid #edecec;
+}
+
+.wikibox .panel-detail dt,
+.wikibox .panel-detail dd {
+  display: inline;
+}
+
+.wikibox .panel-detail dd::after {
+  content: "";
+  display: block;
+  margin-bottom: 12px;
+}
+
+.wikibox .panel-detail dt {
+  font-weight: bold;
+}
