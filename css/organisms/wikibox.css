@@ -78,4 +78,17 @@
 .wikibox .panel-footer {
   background-color: #f1f3fc;
   color: #212121;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.wikibox .panel-footer a {
+  background-color: #f1f3fc;
+  border-bottom: 1px solid #edecec;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 30px 10px;
+  position: relative;
+  top: 26px;
+  width: 135px;
 }
