@@ -88,8 +88,19 @@
   border-bottom: 1px solid #edecec;
   border-radius: 50%;
   display: inline-block;
-  padding: 30px 10px;
+  padding: 30px 10px 10px;
   position: relative;
+  text-decoration: none;
   top: 26px;
-  width: 135px;
+  width: 125px;
+}
+
+.wikibox .panel-footer a::after {
+  content: "";
+  display: block;
+  background: transparent url("../../media/icons/more.svg") 0 0 no-repeat;
+  background-size: 24px;
+  height: 24px;
+  margin: 0 auto;
+  width: 24px;
 }
