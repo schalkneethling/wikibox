@@ -29,7 +29,13 @@
   height: max-content;
   margin-bottom: 48px;
   margin-top: 75px;
+  opacity: 1;
   position: relative;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.wikibox .panel.transparent {
+  opacity: 0;
 }
 
 .wikibox .panel-footer,
