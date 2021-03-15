@@ -31,11 +31,24 @@
   margin-top: 75px;
   opacity: 1;
   position: relative;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.7s ease-in-out;
 }
 
 .wikibox .panel.transparent {
   opacity: 0;
+  animation: 0.7s ease-in-out skew;
+}
+
+@keyframes skew {
+  0% {
+    transform: skew(0deg, 0deg) scale(100%) translate(-100px, 50px);
+  }
+  50% {
+    transform: skew(0deg, 20deg) scale(90%) translate(-125px, 50px);
+  }
+  100% {
+    transform: skew(0deg, 35deg) scale(80%) translate(-150px, 50px);
+  }
 }
 
 .wikibox .panel-footer,
