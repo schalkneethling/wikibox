@@ -1,5 +1,5 @@
 .wikibox {
-  margin: 72px 48px;
+  margin: 48px;
   max-width: 450px;
   overflow: hidden;
 }
@@ -15,12 +15,18 @@
 }
 
 .wikibox h3 {
+  font-size: 1.5rem;
   margin-top: 12px;
+}
+
+.wikibox .subtitle {
+  color: #535353;
 }
 
 .wikibox .panel {
   border: 1px solid #edecec;
   flex: 0 0 100%;
+  height: max-content;
   margin-top: 75px;
   position: relative;
 }
@@ -67,4 +73,9 @@
 
 .wikibox .panel-detail dt {
   font-weight: bold;
+}
+
+.wikibox .panel-footer {
+  background-color: #f1f3fc;
+  color: #212121;
 }
