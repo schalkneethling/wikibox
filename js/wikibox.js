@@ -29,29 +29,29 @@
   }
 
   function handleTransition(panel) {
-    panel.addEventListener("transitionend", () => {
-      panel.classList.remove("transparent");
+    panel.addEventListener("animationend", () => {
+      panel.classList.remove("transition-out");
+      panel.classList.toggle("hidden");
+      panel.nextElementSibling.classList.remove("transition-in");
     });
   }
 
   if (wikibox) {
     wikibox.addEventListener("click", (event) => {
-      currentPanel.classList.add("transparent");
+      currentPanel.classList.add("transition-out");
+      currentPanel.nextElementSibling.classList.remove("hidden");
+      currentPanel.nextElementSibling.classList.add("transition-in");
       handleTransition(currentPanel);
 
       if (
         event.target.id === "button-next" &&
         panelContainerPosition > endLeftPosition
       ) {
-        panelContainerPosition = panelContainerPosition - wikiboxWidth;
-        panelContainer.style.left = `${panelContainerPosition}px`;
         currentPanel = currentPanel.nextElementSibling;
       } else if (
         event.target.id === "button-previous" &&
         panelContainerPosition < startLeftPosition
       ) {
-        panelContainerPosition = panelContainerPosition + wikiboxWidth;
-        panelContainer.style.left = `${panelContainerPosition}px`;
         currentPanel = currentPanel.previousElementSibling;
       }
       togglePagination();

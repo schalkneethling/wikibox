@@ -1,17 +1,14 @@
 .wikibox {
   margin: 0 48px;
   max-width: 450px;
-  overflow: hidden;
 }
 
 .wikibox .panel-container {
   display: flex;
-  left: 0;
   list-style: none;
   margin: 0;
   padding: 0;
   position: relative;
-  transition: left 0.5s ease-in-out;
 }
 
 .wikibox h3 {
@@ -24,30 +21,54 @@
 }
 
 .wikibox .panel {
+  background-color: #fff;
   border: 1px solid #edecec;
   flex: 0 0 100%;
   height: max-content;
+  left: 0;
   margin-bottom: 48px;
   margin-top: 75px;
-  opacity: 1;
-  position: relative;
-  transition: opacity 0.7s ease-in-out;
+  position: absolute;
+  transition: left 1s ease-in-out;
 }
 
-.wikibox .panel.transparent {
-  opacity: 0;
-  animation: 0.7s ease-in-out skew;
+.wikibox .panel.transition-in {
+  animation: 0.3s ease-in skew-in;
 }
 
-@keyframes skew {
+.wikibox .panel.transition-out {
+  animation: 0.3s ease-out skew-out;
+}
+
+@keyframes skew-in {
   0% {
-    transform: skew(0deg, 0deg) scale(100%) translate(-100px, 50px);
+    opacity: 0;
+    transform: skew(0deg, -35deg) scale(80%, 100%) translate3d(25px, 0, -200px);
+    transform-origin: center;
   }
   50% {
-    transform: skew(0deg, 20deg) scale(90%) translate(-125px, 50px);
+    opacity: 0.5;
+    transform: skew(0deg, -15deg) scale(90%, 100%) translate3d(15px, 0, -100px);
   }
   100% {
-    transform: skew(0deg, 35deg) scale(80%) translate(-150px, 50px);
+    opacity: 1;
+    transform: skew(0deg, 0deg) scale(100%, 100%) translate3d(0, 0, 0);
+  }
+}
+
+@keyframes skew-out {
+  0% {
+    opacity: 1;
+    transform: skew(0deg, 0deg) scale(100%, 100%) translate3d(0, 0, -100px);
+    transform-origin: center;
+  }
+  50% {
+    opacity: 0.5;
+    transform: skew(0deg, 15deg) scale(90%, 100%) translate3d(-15px, 0, -150px);
+  }
+  100% {
+    opacity: 0;
+    transform: skew(0deg, 35deg) scale(80%, 100%) translate3d(-25px, 0, -200px);
   }
 }
 
